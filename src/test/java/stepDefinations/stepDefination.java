@@ -38,6 +38,7 @@ public class stepDefination extends base {
 		System.out.println("default Selected : From 2nd method " + defaultItem);
 		
 		
+		
 		Select val=drpD.getDropDownTest("USD");
 		String selectedoption =val.getFirstSelectedOption().getText();
 	      System.out.println("Selected element: " + selectedoption);
