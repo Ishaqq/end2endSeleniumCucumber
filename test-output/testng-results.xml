@@ -1,134 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-15T16:55:20 PKT" name="Default suite" finished-at="2022-01-15T16:55:59 PKT" duration-ms="38791">
+  <suite started-at="2022-01-19T12:31:54 PKT" name="Default suite" finished-at="2022-01-19T12:32:08 PKT" duration-ms="13870">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-01-15T16:55:20 PKT" name="Default test" finished-at="2022-01-15T16:55:59 PKT" duration-ms="38791">
-      <class name="cucumberOptions.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" started-at="2022-01-15T16:55:20 PKT" name="setUpClass" finished-at="2022-01-15T16:55:21 PKT" duration-ms="161" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5f366587]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-01-19T12:31:54 PKT" name="Default test" finished-at="2022-01-19T12:32:08 PKT" duration-ms="13870">
+      <class name="endToEndAutomation.App">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.App@6d0b5baf]" started-at="2022-01-19T12:31:54 PKT" name="setUp" finished-at="2022-01-19T12:32:08 PKT" duration-ms="13746" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" started-at="2022-01-15T16:55:21 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T16:55:37 PKT" duration-ms="16095" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive test validating login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login into Application]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problem: 
-defaulItem cannot be resolved to a variable
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-defaulItem cannot be resolved to a variable
-
-at stepDefinations.stepDefination.user_enters_something_and_something_and_logs_in(stepDefination.java:39)
-at ✽.User enters "JOHN" and "12345678" and logs in(file:///C:/Users/qa.nitb/eclipse-workspace/endToEndAutomation/src/test/java/features/login.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+        </test-method> <!-- setUp -->
+        <test-method signature="loadingURL()[pri:0, instance:endToEndAutomation.App@6d0b5baf]" started-at="2022-01-19T12:32:08 PKT" name="loadingURL" finished-at="2022-01-19T12:32:08 PKT" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" started-at="2022-01-15T16:55:37 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T16:55:37 PKT" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Nagative test validating login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login into Application]"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loadingURL -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.App@6d0b5baf]" started-at="2022-01-19T12:32:08 PKT" name="teardown" finished-at="2022-01-19T12:32:08 PKT" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" started-at="2022-01-15T16:55:37 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T16:55:49 PKT" duration-ms="12039" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive test validating login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login into application]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" started-at="2022-01-15T16:55:49 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T16:55:59 PKT" duration-ms="10437" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive test validating login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login into application]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with locator By.xpath: //span[text()='Login']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'NB-LT-LO-217', ip: '192.168.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[text()='Login']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'NB-LT-LO-217', ip: '192.168.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at pageObject.LandingPage.getLogin(LandingPage.java:31)
-at stepDefinations.loginQAclick.click_on_login_link_in_home_page_to_land_on_secure_sign_in_page(loginQAclick.java:28)
-at ✽.Click on login link in home page to land on secure sign in Page(file:///C:/Users/qa.nitb/eclipse-workspace/endToEndAutomation/src/test/java/features/loginQaClick.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@1b11171f]" started-at="2022-01-15T16:55:59 PKT" name="tearDownClass" finished-at="2022-01-15T16:55:59 PKT" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumberOptions.TestRunner -->
+        </test-method> <!-- teardown -->
+      </class> <!-- endToEndAutomation.App -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
