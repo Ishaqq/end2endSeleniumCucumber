@@ -11,11 +11,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import pageObject.LandingPage;
 import pageObject.LoginPage;
 import resources.base;
+import resources.base2;
 
-public class validateTitle extends base {
+public class validateTitle extends base2 {
 	public WebDriver driver;
 	public static Logger log=LogManager.getLogger(base.class.getName());
 	@BeforeTest
@@ -29,8 +32,10 @@ public class validateTitle extends base {
 	public void titleValidation() throws IOException {
 		LandingPage l=new LandingPage(driver);
 		
-		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSESewrwe");
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
 		log.info("Title verified");
+		test.log(Status.INFO, "Title is verified");
+		test.log(Status.INFO, "Title is verified");
 	}
 	@AfterTest
 	public void teardown() {

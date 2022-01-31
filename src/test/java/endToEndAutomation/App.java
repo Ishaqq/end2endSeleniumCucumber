@@ -10,11 +10,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import pageObject.LandingPage;
 import pageObject.LoginPage;
 import resources.base;
+import resources.base2;
 
-public class App extends base {
+public class App extends base2 {
 	public static Logger log=LogManager.getLogger(base.class.getName());
 	@BeforeTest
 	public void setUp() throws IOException {
@@ -29,6 +32,8 @@ public class App extends base {
 		
 		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
 		log.info("Only url loaded");
+		test.log(Status.INFO, "Test fdslkjfldsjlfsdPassed");
+		test.log(Status.INFO, "Test fdslkjfldsjlfsdPassed");
 	}
 	@AfterTest
 	public void teardown() {

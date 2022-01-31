@@ -13,11 +13,12 @@ import com.aventstack.extentreports.Status;
 
 import resources.ExtentReporterNG;
 import resources.base;
+import resources.base2;
 
-public class Listerners extends base implements ITestListener {
-	ExtentTest test;
-	ExtentReports extent=ExtentReporterNG.getReportObject();
-	ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
+public class Listerners extends base2 implements ITestListener {
+//	ExtentTest test;
+//	ExtentReports extent=ExtentReporterNG.getReportObject();
+//	ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
@@ -30,8 +31,6 @@ public class Listerners extends base implements ITestListener {
 		// TODO Auto-generated method stub
 		//test.log(Status.PASS, "Test Passed");
 		extentTest.get().log(Status.PASS, "Test Passed");
-		
-		
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -47,7 +46,7 @@ public class Listerners extends base implements ITestListener {
 			e.printStackTrace();
 		} 
 		try {
-			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName,driver),result.getMethod().getMethodName());
+			extentTest.get().addScreenCaptureFromPath(captureScreenshot(testMethodName,driver),result.getMethod().getMethodName());
 			//getScreenShotPath(testMethodName,driver);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

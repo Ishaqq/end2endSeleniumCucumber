@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import pageObject.LandingPage;
 import pageObject.LoginPage;
 import resources.base;
+import resources.base2;
 
 public class loginQAclick extends base {
 	@Given("Initialize the browser with chrome to QA")
@@ -48,8 +49,10 @@ public class loginQAclick extends base {
 //	}
 
 	@Then("verify that user is succesfully logged in")
-	public void verify_that_user_is_succesfully_logged_in() {
+	public void verify_that_user_is_succesfully_logged_in() throws IOException {
 		// Write code here that turns the phrase above into concrete actions
+		
+		
 		
 	}
 }

@@ -1,1 +1,1 @@
-16:25:06.512 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x9eb1d86a013e3506
+16:11:29.557 [AsyncHttpClient-1-10] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-10

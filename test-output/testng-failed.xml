@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="endToEndAutomation.Listerners"/>
+  </listeners>
+  <test thread-count="5" name="validate Title(failed)">
     <classes>
-      <class name="endToEndAutomation.Calender2">
+      <class name="endToEndAutomation.validateTitle">
         <methods>
-          <include name="calender3"/>
+          <include name="titleValidation"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- endToEndAutomation.Calender2 -->
+      </class> <!-- endToEndAutomation.validateTitle -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- validate Title(failed) -->
+  <test thread-count="5" name="Validating nav bar(failed)">
+    <classes>
+      <class name="endToEndAutomation.validateNavBar">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="validateBasePageNavigation"/>
+        </methods>
+      </class> <!-- endToEndAutomation.validateNavBar -->
+    </classes>
+  </test> <!-- Validating nav bar(failed) -->
+</suite> <!-- Failed suite [Suite] -->

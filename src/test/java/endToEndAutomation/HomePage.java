@@ -10,11 +10,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import pageObject.LandingPage;
 import pageObject.LoginPage;
 import resources.base;
+import resources.base2;
 
-public class HomePage extends base {
+public class HomePage extends base2 {
 	public WebDriver driver;
 	public static Logger log=LogManager.getLogger(base.class.getName());
 	@BeforeTest
@@ -27,6 +30,9 @@ public class HomePage extends base {
 	public void validateUsers() throws IOException {
 		driver.get(prop.getProperty("url"));
 		log.info("Url is looded");
+		captureScreenshot("validateUsers",driver);
+		test.log(Status.INFO, "Test fdslkjfldsjlfsdPassed");
+		
 		
 	}
 	@AfterTest

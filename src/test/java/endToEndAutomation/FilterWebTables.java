@@ -17,7 +17,7 @@ public class FilterWebTables {
 
 		List<WebElement> veggies = driver.findElements(By.xpath("//tr/td[1]"));
 		// 1 results
-		List<WebElement> filteredList = veggies.stream().filter(veggie -> veggie.getText().contains("Rice")).
+		List<Object> filteredList = veggies.stream().filter(veggie -> veggie.getText().contains("Rice")).
 				collect(Collectors.toList());
 
 		// 1 result
