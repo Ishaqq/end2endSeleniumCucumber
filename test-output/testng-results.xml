@@ -1,73 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-31T16:11:06 PKT" name="Suite" finished-at="2022-01-31T16:11:29 PKT" duration-ms="22711">
+  <suite started-at="2022-01-31T23:25:31 PKT" name="Default suite" finished-at="2022-01-31T23:25:32 PKT" duration-ms="876">
     <groups>
     </groups>
-    <test started-at="2022-01-31T16:11:06 PKT" name="validate Title" finished-at="2022-01-31T16:11:13 PKT" duration-ms="6400">
-      <class name="endToEndAutomation.validateTitle">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.validateTitle@6a282fdd]" started-at="2022-01-31T16:11:06 PKT" name="setUp" finished-at="2022-01-31T16:11:12 PKT" duration-ms="6220" status="PASS">
+    <test started-at="2022-01-31T23:25:31 PKT" name="Default test" finished-at="2022-01-31T23:25:32 PKT" duration-ms="876">
+      <class name="endToEndAutomation.CommonDataProviderXl">
+        <test-method signature="commonDataProvider(java.util.Hashtable)[pri:0, instance:endToEndAutomation.CommonDataProviderXl@1b2abca6]" started-at="2022-01-31T23:25:32 PKT" name="commonDataProvider" data-provider="dp" finished-at="2022-01-31T23:25:32 PKT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{class1=test, name=ldfjlds, code=test3, runmode=Y}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="titleValidation()[pri:0, instance:endToEndAutomation.validateTitle@6a282fdd]" started-at="2022-01-31T16:11:13 PKT" name="titleValidation" finished-at="2022-01-31T16:11:13 PKT" duration-ms="73" status="PASS">
+        </test-method> <!-- commonDataProvider -->
+        <test-method signature="commonDataProvider(java.util.Hashtable)[pri:0, instance:endToEndAutomation.CommonDataProviderXl@1b2abca6]" started-at="2022-01-31T23:25:32 PKT" name="commonDataProvider" data-provider="dp" finished-at="2022-01-31T23:25:32 PKT" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{class1=test5, name=test4, code=test6, runmode=N}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[with N no]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: with N no
+at endToEndAutomation.CommonDataProviderXl.commonDataProvider(CommonDataProviderXl.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.validateTitle@6a282fdd]" started-at="2022-01-31T16:11:13 PKT" name="teardown" finished-at="2022-01-31T16:11:13 PKT" duration-ms="61" status="PASS">
+        </test-method> <!-- commonDataProvider -->
+        <test-method signature="commonDataProvider(java.util.Hashtable)[pri:0, instance:endToEndAutomation.CommonDataProviderXl@1b2abca6]" started-at="2022-01-31T23:25:32 PKT" name="commonDataProvider" data-provider="dp" finished-at="2022-01-31T23:25:32 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{class1=test5, name=test4, code=test6, runmode=Y}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- endToEndAutomation.validateTitle -->
-    </test> <!-- validate Title -->
-    <test started-at="2022-01-31T16:11:13 PKT" name="Home Page navigation" finished-at="2022-01-31T16:11:18 PKT" duration-ms="5227">
-      <class name="endToEndAutomation.HomePage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.HomePage@6d2dc9d2]" started-at="2022-01-31T16:11:13 PKT" name="setUp" finished-at="2022-01-31T16:11:14 PKT" duration-ms="712" status="PASS">
+        </test-method> <!-- commonDataProvider -->
+        <test-method signature="commonDataProvider(java.util.Hashtable)[pri:0, instance:endToEndAutomation.CommonDataProviderXl@1b2abca6]" started-at="2022-01-31T23:25:32 PKT" name="commonDataProvider" data-provider="dp" finished-at="2022-01-31T23:25:32 PKT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{class1=test5, name=test4, code=test6, runmode=N}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[with N no]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: with N no
+at endToEndAutomation.CommonDataProviderXl.commonDataProvider(CommonDataProviderXl.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateUsers()[pri:0, instance:endToEndAutomation.HomePage@6d2dc9d2]" started-at="2022-01-31T16:11:14 PKT" name="validateUsers" finished-at="2022-01-31T16:11:18 PKT" duration-ms="4448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUsers -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.HomePage@6d2dc9d2]" started-at="2022-01-31T16:11:18 PKT" name="teardown" finished-at="2022-01-31T16:11:18 PKT" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- endToEndAutomation.HomePage -->
-    </test> <!-- Home Page navigation -->
-    <test started-at="2022-01-31T16:11:18 PKT" name="Validating nav bar" finished-at="2022-01-31T16:11:24 PKT" duration-ms="5690">
-      <class name="endToEndAutomation.validateNavBar">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.validateNavBar@30a7c98f]" started-at="2022-01-31T16:11:18 PKT" name="setUp" finished-at="2022-01-31T16:11:24 PKT" duration-ms="5578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateBasePageNavigation()[pri:0, instance:endToEndAutomation.validateNavBar@30a7c98f]" started-at="2022-01-31T16:11:24 PKT" name="validateBasePageNavigation" finished-at="2022-01-31T16:11:24 PKT" duration-ms="55" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateBasePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.validateNavBar@30a7c98f]" started-at="2022-01-31T16:11:24 PKT" name="teardown" finished-at="2022-01-31T16:11:24 PKT" duration-ms="54" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- endToEndAutomation.validateNavBar -->
-    </test> <!-- Validating nav bar -->
-    <test started-at="2022-01-31T16:11:24 PKT" name="App" finished-at="2022-01-31T16:11:29 PKT" duration-ms="5101">
-      <class name="endToEndAutomation.App">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.App@8b91134]" started-at="2022-01-31T16:11:24 PKT" name="setUp" finished-at="2022-01-31T16:11:29 PKT" duration-ms="4893" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loadingURL()[pri:0, instance:endToEndAutomation.App@8b91134]" started-at="2022-01-31T16:11:29 PKT" name="loadingURL" finished-at="2022-01-31T16:11:29 PKT" duration-ms="158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadingURL -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.App@8b91134]" started-at="2022-01-31T16:11:29 PKT" name="teardown" finished-at="2022-01-31T16:11:29 PKT" duration-ms="50" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- endToEndAutomation.App -->
-    </test> <!-- App -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- commonDataProvider -->
+      </class> <!-- endToEndAutomation.CommonDataProviderXl -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
