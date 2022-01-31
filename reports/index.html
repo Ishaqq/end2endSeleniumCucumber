@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 31, 2022 04:11:06 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 31, 2022 11:05:03 PM</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -81,7 +82,7 @@
           <div class="test-detail">
             <p class="name">titleValidation</p>
             <p class="text-sm">
-              <span>4:11:13 PM</span> / <span>00:00:00:064</span>
+              <span>11:05:18 PM</span> / <span>00:00:00:039</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,9 +91,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">titleValidation</h5>
-<span class='badge badge-success'>01.31.2022 4:11:13 PM</span>
-<span class='badge badge-danger'>01.31.2022 4:11:13 PM</span>
-<span class='badge badge-default'>00:00:00:064</span>
+<span class='badge badge-success'>01.31.2022 11:05:18 PM</span>
+<span class='badge badge-danger'>01.31.2022 11:05:18 PM</span>
+<span class='badge badge-default'>00:00:00:039</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,21 +105,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:11:13 PM</td>
+        <td>11:05:18 PM</td>
+        <td>
+          titleValidation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:05:18 PM</td>
         <td>
           Title is verified
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:11:13 PM</td>
+        <td>11:05:18 PM</td>
         <td>
           Title is verified
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:11:13 PM</td>
+        <td>11:05:18 PM</td>
         <td>
           Test Passed
         </td>
@@ -128,25 +136,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateUsers</p>
             <p class="text-sm">
-              <span>4:11:14 PM</span> / <span>00:00:04:448</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:05:19 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateUsers</h5>
-<span class='badge badge-success'>01.31.2022 4:11:14 PM</span>
-<span class='badge badge-danger'>01.31.2022 4:11:18 PM</span>
-<span class='badge badge-default'>00:00:04:448</span>
+<h5 class="test-status text-skip">validateUsers</h5>
+<span class='badge badge-success'>01.31.2022 11:05:19 PM</span>
+<span class='badge badge-danger'>01.31.2022 11:05:19 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -158,16 +166,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:11:18 PM</td>
+        <td>11:05:19 PM</td>
         <td>
-          Test fdslkjfldsjlfsdPassed
+          validateUsers
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:11:18 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:05:19 PM</td>
         <td>
-          Test Passed
+          VALIDATEUSERS Skipped the test as the Run mode is NO
         </td>
       </tr>
   </tbody>
@@ -175,25 +183,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateBasePageNavigation</p>
             <p class="text-sm">
-              <span>4:11:24 PM</span> / <span>00:00:00:055</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:05:38 PM</span> / <span>00:00:00:003</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateBasePageNavigation</h5>
-<span class='badge badge-success'>01.31.2022 4:11:24 PM</span>
-<span class='badge badge-danger'>01.31.2022 4:11:24 PM</span>
-<span class='badge badge-default'>00:00:00:055</span>
+<h5 class="test-status text-skip">validateBasePageNavigation</h5>
+<span class='badge badge-success'>01.31.2022 11:05:38 PM</span>
+<span class='badge badge-danger'>01.31.2022 11:05:38 PM</span>
+<span class='badge badge-default'>00:00:00:003</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -205,16 +213,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:11:24 PM</td>
+        <td>11:05:38 PM</td>
         <td>
-          Navigation bar is displayed
+          validateBasePageNavigation
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:11:24 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:05:38 PM</td>
         <td>
-          Test Passed
+          VALIDATEBASEPAGENAVIGATION Skipped the test as the Run mode is NO
         </td>
       </tr>
   </tbody>
@@ -229,7 +237,7 @@
           <div class="test-detail">
             <p class="name">loadingURL</p>
             <p class="text-sm">
-              <span>4:11:29 PM</span> / <span>00:00:00:157</span>
+              <span>11:05:57 PM</span> / <span>00:00:00:025</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -238,9 +246,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">loadingURL</h5>
-<span class='badge badge-success'>01.31.2022 4:11:29 PM</span>
-<span class='badge badge-danger'>01.31.2022 4:11:29 PM</span>
-<span class='badge badge-default'>00:00:00:157</span>
+<span class='badge badge-success'>01.31.2022 11:05:57 PM</span>
+<span class='badge badge-danger'>01.31.2022 11:05:57 PM</span>
+<span class='badge badge-default'>00:00:00:025</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -252,21 +260,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:11:29 PM</td>
+        <td>11:05:57 PM</td>
+        <td>
+          loadingURL
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:05:57 PM</td>
         <td>
           Test fdslkjfldsjlfsdPassed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:11:29 PM</td>
+        <td>11:05:57 PM</td>
         <td>
           Test fdslkjfldsjlfsdPassed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:11:29 PM</td>
+        <td>11:05:57 PM</td>
         <td>
           Test Passed
         </td>
@@ -290,19 +305,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 31, 2022 04:11:06 PM</h3>
+<h3>Jan 31, 2022 11:05:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 31, 2022 04:11:29 PM</h3>
+<h3>Jan 31, 2022 11:05:57 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -324,13 +339,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> tests passed
+<div><small data-tooltip='50%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -347,10 +362,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='40%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='16%'><b>2</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>6</b> others
+<b data-tooltip='%'>10</b> others
 </small>
 </div>
 </div>
@@ -366,7 +381,7 @@
 </div></div>
 <script>
 var timeline = {
-"titleValidation":0.064,"validateUsers":4.448,"validateBasePageNavigation":0.055,"loadingURL":0.157
+"titleValidation":0.039,"validateUsers":0.002,"validateBasePageNavigation":0.003,"loadingURL":0.025
 };
 </script>
 <div class="row">
@@ -389,10 +404,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
+passParent: 2,
 failParent: 0,
 warningParent: 0,
-skipParent: 0,
+skipParent: 2,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -406,11 +421,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
+passEvents: 2,
 failEvents: 0,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 6
+skipEvents: 2,
+infoEvents: 8
 };
 </script>        </div>
       </div>

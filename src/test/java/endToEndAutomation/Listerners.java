@@ -6,12 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.SkipException;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import resources.ExtentReporterNG;
+import resources.TestUtils;
 import resources.base;
 import resources.base2;
 
@@ -24,6 +26,11 @@ public class Listerners extends base2 implements ITestListener {
 		
 		 test=extent.createTest(result.getMethod().getMethodName());
 		 extentTest.set(test);
+		 
+		 //extentTest.get().log(Status.INFO, result.getName());
+		 if(!TestUtils.isTestRunnable(result.getName(), excel)) {
+			 throw new SkipException(result.getName()+" is skipped with no");
+		 }
 		
 	}
 
@@ -57,6 +64,8 @@ public class Listerners extends base2 implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
+		//test.log(LogStatus.SKIP, result.getName().toUpperCase()+" Skipped the test as the Run mode is NO");
+		test.log(Status.SKIP, result.getName().toUpperCase()+" Skipped the test as the Run mode is NO");
 		
 	}
 
