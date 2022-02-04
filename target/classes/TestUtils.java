@@ -28,7 +28,7 @@ public class TestUtils extends base2 {
 	@DataProvider(name="dp")
 	public Object[][] getData(Method m) {
 
-		String sheetName = m.getName();
+		String sheetName = "test_suite";
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
 
@@ -55,7 +55,7 @@ public class TestUtils extends base2 {
 
 	public static boolean isTestRunnable(String testName, ExcelReader excel) {
 
-		String sheetName = "test_suite";
+		String sheetName = "TestCases";
 		int rows = excel.getRowCount(sheetName);
 
 		for (int rNum = 2; rNum <= rows; rNum++) {

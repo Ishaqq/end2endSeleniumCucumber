@@ -4,6 +4,17 @@
   <listeners>
     <listener class-name="endToEndAutomation.Listerners"/>
   </listeners>
+  <test thread-count="5" name="validate Title(failed)">
+    <classes>
+      <class name="endToEndAutomation.validateTitle">
+        <methods>
+          <include name="titleValidation"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- endToEndAutomation.validateTitle -->
+    </classes>
+  </test> <!-- validate Title(failed) -->
   <test thread-count="5" name="Home Page navigation(failed)">
     <classes>
       <class name="endToEndAutomation.HomePage">
@@ -26,4 +37,15 @@
       </class> <!-- endToEndAutomation.validateNavBar -->
     </classes>
   </test> <!-- Validating nav bar(failed) -->
+  <test thread-count="5" name="App(failed)">
+    <classes>
+      <class name="endToEndAutomation.App">
+        <methods>
+          <include name="loadingURL"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- endToEndAutomation.App -->
+    </classes>
+  </test> <!-- App(failed) -->
 </suite> <!-- Failed suite [Suite] -->

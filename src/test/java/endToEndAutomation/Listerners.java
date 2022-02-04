@@ -16,19 +16,18 @@ import resources.ExtentReporterNG;
 import resources.TestUtils;
 import resources.base;
 import resources.base2;
+import rough.DataUtils;
 
-public class Listerners extends base2 implements ITestListener {
-//	ExtentTest test;
-//	ExtentReports extent=ExtentReporterNG.getReportObject();
-//	ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
+public class Listerners extends base2 implements ITestListener {;
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 		 test=extent.createTest(result.getMethod().getMethodName());
 		 extentTest.set(test);
 		 
-		 //extentTest.get().log(Status.INFO, result.getName());
-		 if(!TestUtils.isTestRunnable(result.getName(), excel)) {
+		String SuiteName=result.getTestContext().getSuite().getName();
+		//DataUtils.checkExecution(SuiteName, result.getName(), "Runmode", excel);
+		 if(!DataUtils.isTestRunnable(result.getName(), excel)) {
 			 throw new SkipException(result.getName()+" is skipped with no");
 		 }
 		

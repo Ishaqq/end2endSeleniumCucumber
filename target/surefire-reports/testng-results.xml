@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-01T08:25:56 PKT" name="Suite" finished-at="2022-02-01T08:26:19 PKT" duration-ms="23323">
+    <groups>
+    </groups>
+    <test started-at="2022-02-01T08:25:56 PKT" name="Home Page navigation" finished-at="2022-02-01T08:25:58 PKT" duration-ms="1921">
+      <class name="endToEndAutomation.HomePage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.HomePage@62628e78]" started-at="2022-02-01T08:25:56 PKT" name="setUp" finished-at="2022-02-01T08:25:58 PKT" duration-ms="1811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateUsers()[pri:0, instance:endToEndAutomation.HomePage@62628e78]" started-at="2022-02-01T08:25:58 PKT" name="validateUsers" finished-at="2022-02-01T08:25:58 PKT" duration-ms="18" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[validateUsers is skipped with no]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: validateUsers is skipped with no
+at endToEndAutomation.Listerners.onTestStart(Listerners.java:32)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsers -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.HomePage@62628e78]" started-at="2022-02-01T08:25:58 PKT" name="teardown" finished-at="2022-02-01T08:25:58 PKT" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- endToEndAutomation.HomePage -->
+    </test> <!-- Home Page navigation -->
+    <test started-at="2022-02-01T08:25:56 PKT" name="App" finished-at="2022-02-01T08:26:16 PKT" duration-ms="20376">
+      <class name="endToEndAutomation.App">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.App@3bec2275]" started-at="2022-02-01T08:25:56 PKT" name="setUp" finished-at="2022-02-01T08:26:16 PKT" duration-ms="20275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loadingURL()[pri:0, instance:endToEndAutomation.App@3bec2275]" started-at="2022-02-01T08:26:16 PKT" name="loadingURL" finished-at="2022-02-01T08:26:16 PKT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadingURL -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.App@3bec2275]" started-at="2022-02-01T08:26:16 PKT" name="teardown" finished-at="2022-02-01T08:26:16 PKT" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- endToEndAutomation.App -->
+    </test> <!-- App -->
+    <test started-at="2022-02-01T08:25:56 PKT" name="validate Title" finished-at="2022-02-01T08:26:17 PKT" duration-ms="20925">
+      <class name="endToEndAutomation.validateTitle">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.validateTitle@56ac5c80]" started-at="2022-02-01T08:25:56 PKT" name="setUp" finished-at="2022-02-01T08:26:17 PKT" duration-ms="20837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="titleValidation()[pri:0, instance:endToEndAutomation.validateTitle@56ac5c80]" started-at="2022-02-01T08:26:17 PKT" name="titleValidation" finished-at="2022-02-01T08:26:17 PKT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.validateTitle@56ac5c80]" started-at="2022-02-01T08:26:17 PKT" name="teardown" finished-at="2022-02-01T08:26:17 PKT" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- endToEndAutomation.validateTitle -->
+    </test> <!-- validate Title -->
+    <test started-at="2022-02-01T08:25:56 PKT" name="Validating nav bar" finished-at="2022-02-01T08:26:19 PKT" duration-ms="23323">
+      <class name="endToEndAutomation.validateNavBar">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:endToEndAutomation.validateNavBar@a137d7a]" started-at="2022-02-01T08:25:56 PKT" name="setUp" finished-at="2022-02-01T08:26:19 PKT" duration-ms="23272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateBasePageNavigation()[pri:0, instance:endToEndAutomation.validateNavBar@a137d7a]" started-at="2022-02-01T08:26:19 PKT" name="validateBasePageNavigation" finished-at="2022-02-01T08:26:19 PKT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[validateBasePageNavigation is skipped with no]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: validateBasePageNavigation is skipped with no
+at endToEndAutomation.Listerners.onTestStart(Listerners.java:32)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBasePageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:endToEndAutomation.validateNavBar@a137d7a]" started-at="2022-02-01T08:26:19 PKT" name="teardown" finished-at="2022-02-01T08:26:19 PKT" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- endToEndAutomation.validateNavBar -->
+    </test> <!-- Validating nav bar -->
+  </suite> <!-- Suite -->
+</testng-results>
